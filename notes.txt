@@ -1,0 +1,147 @@
+what is webpack for?
+    an asset bundler
+    bundles all kinds of assets like css, jpg and js
+
+    core goal:
+        1. bundles our code/assets together into less code and assets
+        2. Tis is great for big apps as it shorten everything for the developer
+
+        
+
+    setting up the webpack.config.js
+
+what is webpack dev server?
+    automatically reload the page when we save our code
+
+    a huge time saver when working on code
+
+npm install "oackage" --save-dev
+    this help save the pacakage as our dev dependencies
+
+
+src folder
+    this contains all our code
+    for developement only
+
+dist folder 
+    distribution folder 
+    this contain our image and other folders
+
+
+
+what are webpack plugin?
+    can help edit your html file on the go
+    for our usage, it adds the js script to the index html file automatically
+
+what is an npm script?
+    npm script is the package.json file
+    from here we can edit the configuration of the npm 
+
+what is babel used for?
+    babel is used to convert es6 code to es5
+    babel is a javascript compiler
+
+
+
+
+
+    installing babel is a 3 step process:
+    1 . install packages require, and edit the rule of the babel loader in the webpack config
+
+    2. create a config file to tell babel which stuff to convert to es5
+
+    3.include polyfill in the entry of the webpack.config
+
+
+what is babel polyfill used for?
+    convert es6 code like promises into es5 understandable code, this is done automatically by babel
+
+
+VERY IMPORTANT TO THINK OF ARCHITECTURE
+    WE ARE USING MVC MODEL
+    MODEL CONTROLLER VIEW
+
+in the context of our actual app
+    1. CONTROLLER
+        it is our choice to make 1 global controller
+        script - index.js
+
+    2. MODEL
+        script - search.js
+
+    3. VIEW
+        script- seachView.js
+
+How ES6 modules work?
+    default
+
+
+    // import string from './models/Search';
+    // // import multiple things from a module use { their exact names }
+    // // import { multiply, add } from './views/searchView';
+    // import * as searchView from './views/searchView';
+
+
+// console.log(`add ${searchView.add(2,3)}`);
+// console.log(`multiply ${searchView.multiply(2,4)}`);
+// console.log(`string ${string}`);
+
+
+
+
+
+// axios library
+// popular http request
+// this works on all browsers
+// why is axios better?
+//   work the same way as fetch, automatically converts to json
+// it is much better to use axios to make http calls
+
+
+
+Building the search controller  
+    learning the concept of application state
+    learn a simple way of implementing state
+
+    what is a state?
+        the number of likes, the search being reutrned, who is logged in, number of people on the site
+        etc etc
+
+    we can use an object to keep track of the state of our app. 
+    This is a simple way of keeping track of all the states of our app.
+
+    in React, we keep track of states using redux
+
+
+
+Building the searchView
+    - advance DOM manipulation techniques
+    - how to use ES6 template string to render entire HTML componenets
+    - how to create a loading spinner
+
+
+BEST WEB DOCUMENTATION FOR javascript
+    - MDN
+
+
+event delegation
+    how do we listen to a button or an event if it does not exist there yet?
+        we use the parent method, we listen for changes in the parent method
+
+hash change event   
+    in the url, after the hash is called a hash change event
+    
+    we listen to the window when there is a change in hash
+
+
+when searching for solutions online,
+    put javascript in front first
+
+How and why to create unique user ID
+
+
+localstorage API
+    can persist in the browsers
+    setitem
+    getitem
+    removetime
